@@ -1,6 +1,6 @@
 # Summary
 
 * [简介](README.md)
-* [What is XYZ?](first-question.md)
-* [How can I do X?](second-question.md)
+* [1.工具安装](first-question.md)
+* [2.c\#基础](second-question.md)
 
