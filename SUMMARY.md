@@ -9,6 +9,7 @@
     * [1.8.4.方法的重载](chapter1/1.8.4..md)
   * [1.9.结构、类与属性](chapter1/1.9..md)
     * [1.9.1.结构的使用](chapter1/1.9.1..md)
+    * [1.9.2.枚举](chapter1/1.9.2..md)
 * [2.SQL基本语法](chapter2/README.md)
   * [2.1. SQL简介](chapter2/2.1-sql.md)
   * [2.2SQL基础语法](chapter2/2.2sql.md)
