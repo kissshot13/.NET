@@ -2,6 +2,8 @@
 
 * [Introduction](README.md)
 * [1.c\#基础](chapter1/README.md)
+  * 1.7.处理异常
+    * [1.7.1.异常的捕获](chapter1/1.7.1..md)
   * [1.8.方法](chapter1/1.8..md)
     * [1.8.1方法的申明和引用](chapter1/1.8.1..md)
     * [1.8.2.静态方法和实例方法](chapter1/1.8.2..md)
@@ -19,8 +21,6 @@
     * [1.10.1.接口](chapter1/1.10.1..md)
     * [1.10.2.抽象类和抽象方法](chapter1/1.10.2..md)
     * [1.10.3.密封类和密封方法](chapter1/1.10.3..md)
-  * 1.7.处理异常
-    * [1.7.1.异常的捕获](chapter1/1.7.1..md)
 * [2.SQL基本语法](chapter2/README.md)
   * [2.1. SQL简介](chapter2/2.1-sql.md)
   * [2.2SQL基础语法](chapter2/2.2sql.md)
