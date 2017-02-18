@@ -65,5 +65,63 @@
     - 只能通过接口来调用。而不能通过具体的类来做。
  -  显式才是真正的实现方式
  -  当显式隐式一起的时候，隐式就失效了。
+ - 实例
+ 
+  
+
+```
+ interface IFlyable1
+    {
+        void fly();
+    }
+   
+   interface IFlyable2
+    {
+        void fly();
+    } 
+
+   class Sparrow:Bird,IFlyable1,IFlyable2
+    {
+        public override void Named()
+        {
+            Console.WriteLine("我是麻雀");
+        }
+
+        public void fly()//隐式接口
+        {
+            Console.WriteLine("我是麻雀，我可以飞");
+        }
+    }  
+      
+   class Eagle:Bird,IFlyable1,IFlyable2
+    {
+        public override void Named()
+        {
+            Console.WriteLine("我是老鹰");
+        }
+        void IFlyable1.fly()//显式实现接口
+        {
+            Console.WriteLine("我是老鹰，我会飞(IF1)");
+        }
+        void IFlyable2.fly()//显式实现接口
+        {
+            Console.WriteLine("我是老鹰，我会飞(IF2)");
+        }
+
+    }
     
-    
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            Sparrow s1 = new Sparrow();
+            s1.fly();//隐式调用
+            IFlyable1 e1 = new Eagle();
+            e1.fly();//显式调用
+            IFlyable2 e2 = new Eagle();
+            e2.fly();//显式调用，采用接口
+            Console.ReadKey();
+        }
+    }
+```
+
