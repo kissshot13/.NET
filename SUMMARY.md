@@ -27,5 +27,5 @@
   * [2.2SQL基础语法](chapter2/2.2sql.md)
 * [3.winform](chapter3/README.md)
   * [3.1.1.winform简介](chapter3/3.1.1.winform.md)
-  * 3.1.2.窗体常用事件
+  * [3.1.2.窗体常用事件](chapter3/3.1.2..md)
 
