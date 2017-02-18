@@ -1,0 +1,13 @@
+## 窗体常用事件
+  - Load： 窗体运行完成即为加载。
+  - click：点击事件
+  - doubleclick：双击事件
+  - KeyDown：按键按下的时候
+  - KeyPress：按下并释放的时候触发
+  - keyUp：按键抬起
+  - MouseClick：鼠标的点击
+  - MouseDoubleClick:鼠标双击
+  - MouseDown：鼠标按下
+  - MouseHover：鼠标光标悬停
+  - MouseMove：鼠标移动
+  - MosueUp：鼠标抬起
