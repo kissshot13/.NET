@@ -16,7 +16,7 @@
     * [1.9.6.类的封装](chapter1/1.9.6..md)
     * [1.9.7.类的多态](chapter1/1.9.7..md)
   * [1.10.接口、抽象与密封](chapter1/1.10..md)
-    * [1.10.1.接口]（chapter1/1.10.1..md）
+    * [1.10.1.接口](chapter1/1.10.1..md)
 * [2.SQL基本语法](chapter2/README.md)
   * [2.1. SQL简介](chapter2/2.1-sql.md)
   * [2.2SQL基础语法](chapter2/2.2sql.md)
