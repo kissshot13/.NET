@@ -29,4 +29,5 @@
   * [3.1.1.winform简介](chapter3/3.1.1.winform.md)
   * [3.1.2.窗体常用事件](chapter3/3.1.2..md)
   * [3.1.3.MDI窗体](chapter3/3.1.3.mdi.md)
+  * [3.1.4.常用控件](chapter3/3.1.4..md)
 
