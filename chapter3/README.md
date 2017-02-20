@@ -41,3 +41,15 @@ private void button1_Click(object sender, EventArgs e)
 ```
 
 
+##ListView控件
+ - listView控件是Windows列表视图控件。该控件显示可用五种不同视图之一显示的项的集合
+ - LargeIcon：在项文本旁显示大图标。如果控件足够大。则项显示在多列中。
+ - SmallIcon：除显示小图标外。其他方面与大图片视图模式相同
+ - List：显示小图标。但总是显示在单列中
+ - Details：在多列中显示项
+ - Tile：每个项都显示为一个完整的大小的图标。在它的右边带项标签和子项信息（仅支持xp和server 2003）
+ 
+ 
+ 
+
+
