@@ -54,4 +54,9 @@
 输出的值是经过HTML编码的。默认的编码可以帮助避免跨站点的脚本攻击（Cross Site Scripting，XSS）；
 
 ###辅助方法的工作原理
- - 每个
+ - 每个Razor视同都继承了他们基类Html属性。Html属性的类型是System.Web.Mvc.HtmlHelper<T>，框架定义的大多数辅助方法都是扩展方法。
+在vv中有个向下的箭头。
+- 在C#扩展方法中只有当在它的名称空间范围内，才能用
+- MVC所有的HtmlHelper扩展方法都是在名称空间System.Web.Mvc.Html中。
+
+
