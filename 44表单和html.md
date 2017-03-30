@@ -194,4 +194,4 @@ public string  Title {get;set;}
 ###辅助方法和ModelState
   - 辅助方法需要和ModelState交互
   - 用来渲染表单字段的辅助方法自动在ModelState字典中查找它们的当前值。辅助方法使用名称表达式作为键。在ModelState字典中进行查找。如果查找到ModelState中存在，辅助方法就用ModelState中的值代替视图数据当前值
- - 
+ - 当模型绑定失败后。坏值依然会显示。ModelState允许保存坏值。当ModelState包含某个属性的错误时。与错误相关的表单辅助方法除了显式渲染指定的css歪。还会渲染'input-validation-error'类
