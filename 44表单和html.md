@@ -221,3 +221,5 @@ public string  Title {get;set;}
     <input id="IsDiscounted" name="isDiscounted" type="checkbox" value="true" />
     <input name="IsDiscounted " type="hidden" value="false" />
  ```
+  - 因为checkbox如果不选中的话，提交表单时它是不会被提交的，这样会导致服务器端controller中Model Binder失败或出错，所以加了隐藏文本框，它的值永远是false，也就是checkbox不选中的话提交的就是这个隐藏文本框的值
+ - 同时提交两个值：true和false,如果是用Model Binder自动绑定对象的话，它会检查提交的值中有没有true，如果有true，它就用true值优先绑定，如果是你自己用Request.Form这样来获取checkbox的值的话，那就小心了，因为你获取的是两个值：true和false。
