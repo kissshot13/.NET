@@ -36,7 +36,7 @@
     * [4.1.1.MVC介绍](411mvc介绍.md)
     * 4.1.2.MVC
     * [4.1.3.路由](413lu-you.md)
-* 5.MusicStore
+* [5.MusicStore](5musicstore.md)
 * [6.First-Project](6first-project.md)
     * [6.1.1.项目初识](611项目初识.md)
 
