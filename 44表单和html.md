@@ -94,8 +94,13 @@ output:
 ```
 @{
     List<SelectListItem> list= new List<SelectListItem>{
-    new SelectListItem{ Text="启用",vlau}
+    new SelectListItem{ Text="启用",vlaue="0",Selected = true},
+    new SelectListItem{ Text="禁止"，value="1"}
+    };
 }
-}
+@Html.DropDownList("state",list,null,new{})
+
+//生成的Html代码
+
 ```
 
