@@ -59,7 +59,7 @@
 - 在C#扩展方法中只有当在它的名称空间范围内，才能用
 - MVC所有的HtmlHelper扩展方法都是在名称空间System.Web.Mvc.Html中。
 
-###Html.TextBox和Html.TextArea
+###Html.TextBox、Html.TextArea和Html.Lable
  - Html.TextBox
 ```
 @Html.TextBox("Age","23",new{@class="text1"})
@@ -89,5 +89,5 @@ output:
 
 ###Html.DropDownList 和 Html.ListBox
 - dropdownlist和listbox都返回select元素，dropdownlist允许单项选择。而listbox支出多项（multiple特性设为multiple）
-- 
+- 这些辅助方法需要一些特定信息
 
