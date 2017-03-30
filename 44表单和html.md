@@ -27,5 +27,7 @@
   - 注意，BeginForm辅助方法输出的是起始的<form>和结束的</form>标签。辅助方法在调用BeginForm期间生产了一个起始标签。并返回一个实现了接口的IDisposable的对象。当视图中的代码执行到结束using语句的花括号的时候。隐式的调用了Dispose方法。因此会生成一个</form>标签。使用Using语句使得代码变得简洁而优雅。
 ```
 @{Html.BeginForm("search","Home",FormMehod.Get);}
-  <input>
+  <input type="text" name="q" />
+  <input type="submit" value="search">
+@{Html.EndForm();}
 ```
