@@ -223,3 +223,12 @@ public string  Title {get;set;}
  ```
   - 因为checkbox如果不选中的话，提交表单时它是不会被提交的，这样会导致服务器端controller中Model Binder失败或出错，所以加了隐藏文本框，它的值永远是false，也就是checkbox不选中的话提交的就是这个隐藏文本框的值
  - 同时提交两个值：true和false,如果是用Model Binder自动绑定对象的话，它会检查提交的值中有没有true，如果有true，它就用true值优先绑定，如果是你自己用Request.Form这样来获取checkbox的值的话，那就小心了，因为你获取的是两个值：true和false。
+
+###渲染辅助方法
+  - Html.ActionLink和Html.RouteLink
+  - ActionLink辅助方法嫩够渲染一个超链接（锚标签）。渲染链接指向另一个控制器操作。与前面看到的BeginForm辅助方法是一样的。ActionLink方法在后台使用路由生成URL。
+  ```
+    @Html.ActionLink（"link text","index","Home",new {id = 10072},null）
+    //第一个参数：标签内容  ，第二个参数相当于路由action，第三个是路由的controller，第四个是路由id，第五个是htmlAttribute
+  ```
+ - RouteLink辅助方法只能接受路由名称，不能接受控制器和操作名称。
