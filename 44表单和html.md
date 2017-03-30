@@ -167,4 +167,13 @@ public ActionResult Edit(int id,FormCollection collection)
 ```
     <label for="GenreId">Genre</label>
 ```
+- 那么Genre从哪里来的呢。原来他们是当辅助方法询问运行时（runtime）是否有GenreId的可用模型元数据的时候，运行时从装饰Album模型的DisplayName特性中获取的信息。
+```
+    [DisplayName("Genre")]
+    public int GenreId {get;set;}
+```
 
+###模板辅助方法
+  - MVC中的模板辅助方法利用元诗句和模板构建HTML。其中元数据包括关于模型值的信息和模型元数据。辅助模板方法有Html.Display 和 Html.Editor以及他们对应的强类型方法Html.DisplayFor和Html.EditorFor.还有他们对应的完整模型Html.DisplayForModel和Html.EditorForModel。
+ - 比如Html.TextBoxFor辅助方法为某个专辑Title属性生产以下HTML标记：
+`<input id="Title" name="Title" type="text" value="For Those About To Rock We Salute You">`
