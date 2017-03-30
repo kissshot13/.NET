@@ -123,7 +123,7 @@ public ActionResult Edit（int id）
 public ActionResult Edit(int id)
 {
     var album = db.Albums.Single(a=>a.AlbumId==id);
-    ViewBag.Genres = new SelectList(db.Genre.OrderBy(g=>g.Name),"GenreId","Name",album.GenreId)；
+    ViewBag.GenreId = new SelectList(db.Genre.OrderBy(g=>g.Name),"GenreId","Name",album.GenreId)；
 
 }
 ```
