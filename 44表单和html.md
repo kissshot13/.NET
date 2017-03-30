@@ -147,6 +147,13 @@ public ActionResult Edit(int id,FormCollection collection)
     ModelState.AddModelError("Title","What a terrible name!");
     return View(album);
 }
-
 ```
+- 在视图中可以使用下面的代码显示错误信息
+`@Html.ValidationMessage("Title")`
+
+
+###强类型辅助方法
+ - 如果不适应使用字符串字面值从视图数据中提取值的话。也可以使用MVC提供的各种强类型辅助方法。使用强类型辅助方法时，只需要为其传递一个lambda表达式来指定要渲染的视图模型。表达式的模型类型必须和视图指定的模型类型（使用@model指令）一致。
+-  
+ 
 
