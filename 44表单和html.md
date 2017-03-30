@@ -137,3 +137,6 @@ public ActionResult Edit(int id)
 ```
  - 这里的控制器操作不仅是构建了主要模型（用于编辑的专辑）。还构建了下拉列表辅助方法所需要的模型。从上面的代码可以看出。SelectList构造函数指定了原始集合（数据库中的Genre表）、作为后台值使用的属性名称（GenreId）、作为显示文本使用的属性（Name）,以及当前所选项的值。
 
+###Html.ValidationMessage
+ - 当ModelState字典中的某个特定字段出现错误时，可以使用ValidationMessage辅助方法来显示相应的错误提示消息。在下面的控制器中为模型状态添加一个错误。
+
