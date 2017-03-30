@@ -245,6 +245,8 @@ public string  Title {get;set;}
     </span>
   //生成
     <span>
-        
+        /Store/Browse?genre=Jazz
     </span>
   ```
+ - RouteUrl辅助方法与Action方法遵循同样的模式。但是与RouteLink一样。它只接受路由名称。而不接受控制器名称和操作名称
+ - 
