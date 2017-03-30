@@ -232,3 +232,19 @@ public string  Title {get;set;}
     //第一个参数：标签内容  ，第二个参数相当于路由action，第三个是路由的controller，第四个是路由id，第五个是htmlAttribute
   ```
  - RouteLink辅助方法只能接受路由名称，不能接受控制器和操作名称。
+
+###URL辅助方法
+ - Action
+ - Content
+ - RouteUrl
+
+ - Action辅助方法与ActionLink非常相似。但是他不返回锚标签。
+  ```
+    <span>
+        @Url.Action("Browse","Store",new {genre="Jazz"},null)
+    </span>
+  //生成
+    <span>
+        
+    </span>
+  ```
