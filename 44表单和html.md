@@ -283,4 +283,11 @@ public ActionResult Menu()
  @foreach(var item in Model.MenuItem) 
 { <li>@item</li> } 
 </ul>
+//Index.cshtml视图，调用Menu菜单
+<html> 
+<head></head> 
+ <body>
+ @Html.Action("Menu")
+ </body> 
+</html>
 ```
