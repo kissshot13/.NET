@@ -120,6 +120,11 @@ public ActionResult Edit（int id）
 ```
 使用SelectList：
 ```
+public ActionResult Edit(int id)
+{
+    var album = db.Albums.Single(a=>a.AlbumId==id);
+    ViewBag.Genres = new SelectList(db.Genre.OrderBy(g=>g.Name),"GenreId","Name",album.GenreId)；
 
+}
 ```
 
