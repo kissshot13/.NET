@@ -177,3 +177,8 @@ public ActionResult Edit(int id,FormCollection collection)
   - MVC中的模板辅助方法利用元诗句和模板构建HTML。其中元数据包括关于模型值的信息和模型元数据。辅助模板方法有Html.Display 和 Html.Editor以及他们对应的强类型方法Html.DisplayFor和Html.EditorFor.还有他们对应的完整模型Html.DisplayForModel和Html.EditorForModel。
  - 比如Html.TextBoxFor辅助方法为某个专辑Title属性生产以下HTML标记：
 `<input id="Title" name="Title" type="text" value="For Those About To Rock We Salute You">`
+ - 如果不使用Html.TextBoxFor辅助方法。也可以使用EditorFor方法取而代之
+`@Html.EditorFor（m=>m.Title）`
+
+- 尽管两种方法生成同样的HTML标记。但是EditorFor方法可以通过使用数据注解来改变生产的HTML。顾名思义，从辅助方法Eidtor来说，就知道他比TextBox方法应用广泛。当使用模板辅助方法时。运行时就可以生产他觉得合适的任何编辑器。下面要在Title属性上添加一个DataType注解。
+
