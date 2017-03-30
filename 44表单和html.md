@@ -78,4 +78,12 @@ output:
     hello &lt;br/&gt word
 </textarea>
 ```
+ - Html.Label <label>标签
+```
+@Html.Lable("label1","你好")
+```
+output:
+```
+<label for="label1">你好</label>
+```
 
