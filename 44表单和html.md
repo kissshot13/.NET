@@ -144,6 +144,8 @@ public ActionResult Edit(int id)
 public ActionResult Edit(int id,FormCollection collection)
 {
     var album  = db.Albums.Find(id);
+    ModelState.AddModelError("Title","What a terrible name!");
+    return View(album);
 }
 
 ```
