@@ -87,3 +87,7 @@ output:
 <label for="label1">你好</label>
 ```
 
+###Html.DropDownList 和 Html.ListBox
+- dropdownlist和listbox都返回select元素，dropdownlist允许单项选择。而listbox支出多项（multiple特性设为multiple）
+- 
+
