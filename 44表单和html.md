@@ -254,3 +254,12 @@ public string  Title {get;set;}
     <script src="@Url.Content("~/Script/jquery-1.10.2.min.js")" type="text/javascript"></script>
 ```
 - 不过MVC5 使用的Razor第三个版本。当波浪号出现在script、style、img元素的src中的时候会自动解析
+
+###Html.Partial和Html.RenderPartial
+```
+public void Partail(string partialViewName，object model，ViewDataDictionary viewData)；
+
+ @Html.Partial("AlbumDisplay")
+```
+- 运行时定位部分视图和定位常规视图使用的逻辑相同。
+- 
