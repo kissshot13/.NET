@@ -60,5 +60,11 @@
 - MVC所有的HtmlHelper扩展方法都是在名称空间System.Web.Mvc.Html中。
 
 ###Html.TextBox和Html.TextArea
- - 
+```
+@Html.TextBox("Age","23",new{@class="text1"})
+```
+output
+```
+<input class="text1" id="Age" name="Age" >
+```
 
