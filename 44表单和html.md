@@ -139,4 +139,12 @@ public ActionResult Edit(int id)
 
 ###Html.ValidationMessage
  - 当ModelState字典中的某个特定字段出现错误时，可以使用ValidationMessage辅助方法来显示相应的错误提示消息。在下面的控制器中为模型状态添加一个错误。
+```
+[HttpPost]
+public ActionResult Edit(int id,FormCollection collection)
+{
+    var album  = db.Albums.Find(id);
+}
+
+```
 
