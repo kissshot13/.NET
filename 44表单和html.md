@@ -154,6 +154,17 @@ public ActionResult Edit(int id,FormCollection collection)
 
 ###强类型辅助方法
  - 如果不适应使用字符串字面值从视图数据中提取值的话。也可以使用MVC提供的各种强类型辅助方法。使用强类型辅助方法时，只需要为其传递一个lambda表达式来指定要渲染的视图模型。表达式的模型类型必须和视图指定的模型类型（使用@model指令）一致。
--  
- 
+```
+    @Html.TextBoxFor(m=>m.Title)
+```
+
+###辅助方法和模型元数据
+- 辅助方法不仅查看了ViewData内部的数据。他们也利用可得到的模型元数据。例如，专辑编辑表单使用Label辅助方法来为流派选择列表显示一个label元素。
+```
+@Html.Label("GenreId")
+```
+这个辅助方法生成的HTML如下：
+```
+    <label for="GenreId">Genre</label>
+```
 
