@@ -99,11 +99,27 @@ output:
     };
 }
 @Html.DropDownList("state",list,null,new{})
-
 //生成的Html代码
 <select id="state" name="state">
     <option selected="selected" value="0">启用</option>
     <option value="1">禁用</option>
 </select>
+```
+或者在控制器中（比如edit中,使用MusicStore的demo）：
+```
+public ActionResult Edit（int id）
+{
+    var album= db.Albums.Single（a=>a.AlbumId == id）;
+    ViewBag.Genres = db.Genres.OrderBy(g=>g.Name).AsEnumerable.Select(g=>new SelectListItem{
+        Text = g.Name,
+        Value = g.GenreId.ToString(),
+        Selected = album.GenreId == g.GenreId
+    });
+ return View(album);
+}
+```
+使用SelectList：
+```
+
 ```
 
