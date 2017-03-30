@@ -181,4 +181,17 @@ public ActionResult Edit(int id,FormCollection collection)
 `@Html.EditorFor（m=>m.Title）`
 
 - 尽管两种方法生成同样的HTML标记。但是EditorFor方法可以通过使用数据注解来改变生产的HTML。顾名思义，从辅助方法Eidtor来说，就知道他比TextBox方法应用广泛。当使用模板辅助方法时。运行时就可以生产他觉得合适的任何编辑器。下面要在Title属性上添加一个DataType注解。
-
+```
+[Required(ErrorMessage="An Album Title is required")]
+[StringLength(160)]
+[DataType(DataType.MultilineText)]
+public string  Title {get;set;}
+```
+- 添加之后，EditorFor辅助方法生成如下的HTML标记
+```
+    <textarea class="text-box multi-line" id="Title" name="Title">Let There Be Rock</textarea>
+```
+###辅助方法和ModelState
+  - 辅助方法需要和ModelState交互
+  - 用来渲染表单字段的辅助方法自动在ModelState字典中查找它们的当前值。辅助方法使用名称表达式作为键。在ModelState字典中进行查找。如果查找到ModelState中存在，辅助方法就用ModelState中的值代替视图数据当前值
+ - 
