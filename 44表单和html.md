@@ -126,5 +126,14 @@ public ActionResult Edit(int id)
     ViewBag.GenreId = new SelectList(db.Genre.OrderBy(g=>g.Name),"GenreId","Name",album.GenreId)；
     return View(album);
 }
+//在view中
+<div class="form-group">
+    @Html.LabelFor(model=>model.ArtistId,"ArtistId",new {@class="control-label col-md-2"})
+    <div class="col-md-10">
+        @Html.DropDownList("GenreId",String.Empty)
+        @Html.ValidationMessageFor(model=>model.ArtistId)
+    </div>
+</div>
 ```
+ - 这里的控制器操作不仅是构建了主要模型（用于编辑的专辑）。还构建了下拉列表辅助方法所需要的模型。从上面的代码可以看出。SelectList构造函数指定了原始集合（数据库中的Genre表）、作为后台值使用的属性名称（GenreId）、作为显示文本使用的属性（Name）,以及当前所选项的值。
 
