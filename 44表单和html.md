@@ -268,3 +268,6 @@ public void Partail(string partialViewName，object model，ViewDataDictionary v
 @Html.Partial("AlbumDisplay")
 ```
  - RenderPartial拥有较好的性能。因为它是直接写入响应流的。但是这种性能优势需要大量的使用才能看出来。
+
+###Html.Action和Html.RenderAction
+ - Action和RenderAction类似于Partial和RenderPartial辅助方法。Partial辅助方法通常在单独的文件中应用视图标记来帮助视图渲染视图模型的一部分。另一方面，Action执行单独的控制器操作。
