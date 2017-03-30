@@ -249,4 +249,8 @@ public string  Title {get;set;}
     </span>
   ```
  - RouteUrl辅助方法与Action方法遵循同样的模式。但是与RouteLink一样。它只接受路由名称。而不接受控制器名称和操作名称
- - 
+ - Content辅助方法特别有用。因为他可以把应用程序的相对路转化为绝对路径。在_layout视图中可以看到Content辅助效果：
+```
+    <script src="@Url.Content("~/Script/jquery-1.10.2.min.js")" type="text/javascript"></script>
+```
+- 不过MVC5 使用的Razor第三个版本。当波浪号出现在script、style、img元素的src中的时候会自动解析
