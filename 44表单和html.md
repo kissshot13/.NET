@@ -262,4 +262,9 @@ public void Partail(string partialViewName，object model，ViewDataDictionary v
  @Html.Partial("AlbumDisplay")
 ```
 - 运行时定位部分视图和定位常规视图使用的逻辑相同。
-- 
+- RenderPartial辅助方法和Partial很相似。但是RenderPartial不是返回字符串，而是直接写入响应输出流。处于这个原因必须把RenderPartial放入{}内。
+```
+@{Html.RenderPartail("AlbumDisplay");}
+@Html.Partial("AlbumDisplay")
+```
+ - RenderPartial拥有较好的性能。因为它是直接写入响应流的。但是这种性能优势需要大量的使用才能看出来。
