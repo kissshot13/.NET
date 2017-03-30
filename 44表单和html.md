@@ -271,3 +271,16 @@ public void Partail(string partialViewName，object model，ViewDataDictionary v
 
 ###Html.Action和Html.RenderAction
  - Action和RenderAction类似于Partial和RenderPartial辅助方法。Partial辅助方法通常在单独的文件中应用视图标记来帮助视图渲染视图模型的一部分。另一方面，Action执行单独的控制器操作。
+ - 同样，action和Renderaction之间在于RenderAction可以直接写入响应流。
+```
+public class MyController { public ActionResult Index() { return View(); } 
+[ChildActionOnly] 
+public ActionResult Menu() 
+{ var menu=GetMenuFromSomewhere(); return PartialView(menu); } }
+//menu操作构建一个菜单模型，并返回一个带有菜单的部分视图
+@model Menu 
+<ul>
+ @foreach(var item in Model.MenuItem) 
+{ <li>@item</li> } 
+</ul>
+```
