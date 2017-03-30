@@ -292,4 +292,13 @@ public ActionResult Menu()
 </html>
 ```
  -  注意Menu操作使用了ChildActionOnlyAttribute特性来标记，这个特性设置防止了运行时直接通过一个URL来调用Menu操作，相反，只能通过Action 或RenderAction来调用这个操作。在ASP.NET MVC3中，在ControllerContext上也有一个称为IsChildAction的新属性，当通过Action或RenderAction方法调用操作时，它的值就为True，当通过一个URL调用时，它的值为false。
+- Action和RenderAction也可以传值
+- 需注意要，RenderAction方法优先调用ActionName特性值作为调用名称。
+```
+[IsChildAction]
+[ActionName("CoolMenu")]
+public ActionResult Menu(){
+    reutrn PartialView();
+}
+```
 
