@@ -101,6 +101,9 @@ output:
 @Html.DropDownList("state",list,null,new{})
 
 //生成的Html代码
-
+<select id="state" name="state">
+    <option selected="selected" value="0">启用</option>
+    <option value="1">禁用</option>
+</select>
 ```
 
