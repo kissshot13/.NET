@@ -59,4 +59,6 @@
 - 在C#扩展方法中只有当在它的名称空间范围内，才能用
 - MVC所有的HtmlHelper扩展方法都是在名称空间System.Web.Mvc.Html中。
 
+###Html.TextBox和Html.TextArea
+ - 
 
