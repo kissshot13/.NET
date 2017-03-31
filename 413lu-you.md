@@ -107,5 +107,31 @@ public ActionResult Index()
     {
         [Route("")]
         [Route("index")]
+        public ActionResult Index()
+        {
+            return View();
+        }
+        /*使用~/作为路由模板的开头，路由前传就会被忽略。以下匹配（/、/home、/home/index）*/        
+        [Route("~/")]
+        [Route("")]
+        [Route("index")]
+        public ActionResult About()
+        {
+            return View();
+        }
+
     }
 ```
+
+###路由约束
+```
+    [Route("Person/{id:int}")]
+    public ActionResult Detials(int id)
+    {
+        return View();
+    }
+```
+###路由默认值
+ - 路由默认值：`[Route("home/{action=index}")]`
+ - 路由可选择值：`[Route("/home/{action=index}/{id?}")]`
+ - 需要注意。默认值相对于其他路由参数的位置非常重要。例如，假设存在URL模式`contacts/{action}/{id}`如果我们只为`{action}`提供参数。而没有为{id}提供参数。那么效果是不给`{action}`提供参数是一样的。会给路由产生二义性。尽管路由允许这样的，但是不是非常有用。
