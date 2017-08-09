@@ -40,5 +40,5 @@
   * [4.4.表单和HTML辅助方法](chapter4/4.4.表单和HTML辅助方法.md)
 * [5.MusicStore](chapter5/5.MusicStore.md)
 * [6.First-Project](chapter6/6.First-Project.md)
-  * [6.1.1.项目初识](chapter6/6.1.1.项目初识.md.md)
+  * [6.1.1.项目初识](chapter6/6.1.1.项目初识.md)
 
