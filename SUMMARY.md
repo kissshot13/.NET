@@ -31,7 +31,7 @@
   * [3.1.1.winform简介](chapter3/3.1.1.winform简介.md)
   * [3.1.2.窗体常用事件](chapter3/3.1.2.窗体常用事件.md)
   * [3.1.3.MDI窗体](chapter3/3.1.3.MDI窗体.md)
-  * [3.1.4.常用控件](chapter3/3.1.4..md)
+  * [3.1.4.常用控件](chapter3/3.1.4.常用控件.md)
   * [3.1.5.高级控件](chapter3/3.1.5..md)
 * [4.ASP.NET MVC5](4aspnet-mvc5.md)
   * [4.1.1.MVC介绍](411mvc介绍.md)
