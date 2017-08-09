@@ -41,4 +41,6 @@
 * [5.MusicStore](chapter5/5.MusicStore.md)
 * [6.First-Project](chapter6/6.First-Project.md)
   * [6.1.1.项目初识](chapter6/6.1.1.项目初识.md)
+* [7.发布](chapter7/chapter7/README.md)
+  * [7.1.IIS 发布](chapter7/7.1.IIS\_发布.md)
 
