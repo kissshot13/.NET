@@ -38,7 +38,7 @@
   * [4.1.2.MVC](chapter/4.1.2.MVC.md)
   * [4.1.3.路由](chapter/4.1.3.路由.md)
   * [4.4.表单和HTML辅助方法](chapter/4.4.表单和HTML辅助方法.md)
-* [5.MusicStore](5musicstore.md)
+* [5.MusicStore](chapter5/5.MusicStore.md)
 * [6.First-Project](6first-project.md)
   * [6.1.1.项目初识](611项目初识.md)
 
