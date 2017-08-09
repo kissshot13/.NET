@@ -25,7 +25,7 @@
     * [1.10.3.密封类和密封方法](chapter1/1.10.3.密封类和密封方法.md)
 * [2.SQL基本语法](chapter2/README.md)
   * [2.1.SQL简介](chapter2/2.1.SQL简介.md)
-  * [2.2SQL基础语法](chapter2/2.2sql.md)
+  * [2.2.SQL基础语法](chapter2/2.2.SQL基础语法.md)
   * [2.3.SQL\_SERVER](chapter2/2.3.sql_server.md)
 * [3.winform](chapter3/README.md)
   * [3.1.1.winform简介](chapter3/3.1.1.winform.md)
