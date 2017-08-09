@@ -1,9 +1,2 @@
 {
-    "plugins": [ "theme-faq" ],
-    "links" : {
-    "sidebar" : {
-        "Home" : "http://zhangjikai.com"
-        }
-    },
-    "language":"zh-hans"
 }
