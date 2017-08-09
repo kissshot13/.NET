@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [1.c\#基础](chapter1/README.md)
   * [1.7.处理异常](chapter1/1.7.1异常处理.md)
-    * [1.7.1.异常的捕获](chapter1/1.7.1..md)
+    * [1.7.1.异常的捕获](chapter1/1.7.1.异常的捕获.md)
     * [1.7.2.预定义异常类与自定义](chapter1/1.7.2..md)
   * [1.8.方法](chapter1/1.8..md)
     * [1.8.1方法的申明和引用](chapter1/1.8.1..md)
