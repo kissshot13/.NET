@@ -27,7 +27,7 @@
   * [2.1.SQL简介](chapter2/2.1.SQL简介.md)
   * [2.2.SQL基础语法](chapter2/2.2.SQL基础语法.md)
   * [2.3.SQL\_SERVER](chapter2/2.3.SQLSERVER.md)
-  * [2.3.SQL\基础语法(二)](chapter2/2.3.SQL基础语法(二).md)
+  * [2.3.SQL基础语法(二)](chapter2/2.3.SQL基础语法\(二\).md)
 * [3.winform](chapter3/README.md)
   * [3.1.1.winform简介](chapter3/3.1.1.winform简介.md)
   * [3.1.2.窗体常用事件](chapter3/3.1.2.窗体常用事件.md)
